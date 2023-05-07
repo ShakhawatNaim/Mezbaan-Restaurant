@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "LT Wave";
+  src: url(../font/LTWave-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "LT Wave";
+  letter-spacing: 1.5px;
+}
+body {
+  background-color: #1e1e1e;
+}
+.header-bg {
+  background: url(../images/header\ image.jpg);
+  width: 100%;
+  height: 880px;
+  background-position: center;
+  background-size: cover;
+}
+.header-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 880px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.customise-navbar {
+  background-color: #1e1b18;
+}
+.customise-navbrand {
+  display: none;
+}
+.customise-navicons,
+.customise-navbtn {
+  width: fit-content;
+}
+.customise-navicons i,
+.customise-togglebtn i {
+  color: #cb7647;
+}
+.customise-togglebtn {
+  border: 2px solid #cb7647 !important;
+}
+.customise-navbtn button,
+.customise-headerbtn,
+.custom-btn {
+  color: #ffffff;
+  background-color: #cb7647;
+  transition: 0.5s ease-in-out;
+}
+.customise-navbtn button:hover,
+.custom-btn:hover {
+  color: #1e1b18;
+  background-color: #f7b08a;
+}
+.customise-headerbtn:hover {
+  color: #1e1b18;
+  background-color: #f7b08a;
+  transform: scale(1.05);
+}
+.customise-header-tagline {
+  top: 400px;
+  z-index: 1;
+}
+.customise-header-tagline p {
+  color: #cb7647;
+}
+/* navlinks hover effect */
+.customise-navlink a {
+  position: relative;
+}
+.customise-navlink a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: 6px;
+  border-bottom: 0;
+  border-left: 0;
+  transition: 0.2s ease-in-out;
+}
+.customise-navlink a:hover {
+  color: #cb7647 !important;
+}
+.customise-navlink a:hover::after {
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid #cb7647;
+  border-left: 2px solid #cb7647;
+}
+/* navlinks hover effect end */
+.custom-text-color {
+  color: #cb7647;
+}
+.customise-booking input {
+  width: 260px;
+  color: #ffff;
+  background-color: transparent;
+  border: 2px solid #cb7647;
+}
+.customise-booking input:focus {
+  outline: 0;
+}
+
+.customise-about {
+  background-color: #1e1b18;
+  position: relative;
+}
+.about-logo {
+  position: absolute;
+  left: 41%;
+  top: 33%;
+}
+.customise-menu-card {
+  width: 440px;
+  background-color: #1e1b18 !important;
+}
+.customise-menu-card ul,
+.customise-menu-card li {
+  background-color: #1e1b18 !important;
+}
+.customise-menu-image {
+  position: absolute;
+  top: 55px;
+  left: 29.6%;
+  z-index: -1;
+}
+.customise-menu-image img {
+  max-height: 500px;
+}
+.owl-nav button {
+  display: none !important;
+}
+.owl-dots {
+  margin-top: 24px !important;
+}
+.menu-small-font {
+  font-size: 10px;
+}
+.customise-service-card {
+  max-width: 305px;
+  height: 305px;
+  background-color: #1e1b18;
+}
+.customise-service-card img {
+  max-height: 100px !important;
+}
+.customise-chef-card {
+  max-width: 410px;
+  background: transparent;
+}
+.customise-item-card {
+  max-width: 305px;
+  background-color: #1e1b18;
+  position: relative;
+}
+.customise-item-card img {
+  max-width: 250px;
+  position: relative;
+}
+.item-card-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #1e1e1e;
+}
+.price-tag {
+  position: absolute !important;
+  top: 0;
+  left: 14px;
+  z-index: 1;
+}
+.price {
+  position: absolute !important;
+  color: #cb7647;
+  top: 4px;
+  left: 22px;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.customise-feedback-card {
+  max-width: 620px;
+  background: transparent;
+  border: 2px solid #cb7647 !important;
+}
+.custom-border {
+  width: fit-content;
+  border-bottom: 2px dashed #cb7647;
+}
+
+.customise-blog-card {
+  max-width: 305px;
+  background: transparent;
+}
+
+.customise-contact-card {
+  width: 410px;
+  height: 410px;
+  background-color: #1e1b18;
+}
+.customise-contact-card-icon i {
+  background-color: #cb7647;
+}
+
+.customise-contact-form textarea {
+  height: 205px !important;
+}
+.customise-contact-form input,
+.customise-contact-form textarea {
+  background-color: transparent !important;
+  border: 2px solid #cb7647 !important;
+}
+.form-floating:not(.form-control:disabled)::before {
+  background-color: transparent !important;
+}
+.customise-contact-form input:focus,
+.customise-contact-form textarea:focus {
+  outline: none !important;
+  box-shadow: 0px 0px 0px 0px !important;
+}
+.customise-footer {
+  border-top: 3px solid #cb7647;
+}
+
+@media (max-width: 1212px) and (min-width: 991px) {
+  .custom-fontsize {
+    font-size: 1.1vw;
+  }
+}
+@media (max-width: 991px) {
+  .customise-navbrand {
+    display: block;
+  }
+  .customise-navlogo {
+    display: none;
+  }
+  .about-logo {
+    display: none;
+  }
+  .customise-menu {
+    justify-content: center !important;
+  }
+  .customise-menu-image {
+    display: none;
+  }
+  .custom-fontsize {
+    font-size: 14px;
+  }
+}

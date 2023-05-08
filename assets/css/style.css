@@ -131,11 +131,14 @@ body {
 .customise-menu-image img {
   max-height: 500px;
 }
-.owl-nav button {
-  display: none !important;
-}
 .owl-dots {
   margin-top: 24px !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: #e9d1c4 !important;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #cb7647 !important;
 }
 .menu-small-font {
   font-size: 10px;
@@ -184,7 +187,7 @@ body {
 }
 
 .customise-feedback-card {
-  max-width: 620px;
+  max-width: 640px;
   background: transparent;
   border: 2px solid #cb7647 !important;
 }
